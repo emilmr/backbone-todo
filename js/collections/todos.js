@@ -6,7 +6,7 @@
     // Reference to this collection's model
     model: app.Todo,
 
-    // Save all of the todo items under the `"todos-backbone"` namespace
+    // Save all of the todo items under the todos-backbone namespace
     localStorage: new Backbone.LocalStorage('todos-backbone'),
 
     // Filter for all todo items that are completed
@@ -35,5 +35,5 @@
     }
   });
 
-  // Create global collection of Todos
+  // Create global collection of todos
   app.Todos = new TodoList();
